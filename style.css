@@ -1,0 +1,115 @@
+@font-face {
+	font-family: "Satoshi";
+	src: url("assets/Satoshi-Variable.woff2");
+	font-weight: 100 1000;
+}
+
+body {
+	background-image: url("assets/gradient.png");
+	background-size: 100vw 100vh;
+	background-color: hsl(0, 0%, 96%);
+	display: flex;
+	height: 100vh;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	font-family: "Satoshi", sans-serif;
+	color: #52525b;
+}
+
+.container {
+	width: 40%;
+	background: hsla(0, 0%, 100%, 0.75);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 6rem 4rem;
+	margin: 2rem;
+
+	border-radius: 1rem;
+	border: 1px solid #e4e4e7;
+	box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.03);
+}
+
+.container > img {
+	max-width: 15rem;
+}
+
+/* Container for links */
+.links {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+/* Responsive stuff */
+@media (max-width: 60rem) {
+	.links {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 35rem) {
+	.container {
+		width: 100%;
+	}
+	.links {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.link-box {
+	border-radius: 0.5rem;
+	padding: 0.25rem 0.05rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 1px solid #e4e4e7;
+	height: 100%;
+	color: #52525b;
+	box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.03);
+}
+
+.link-box ion-icon {
+	font-size: 1.75rem;
+}
+
+.link-box:hover {
+	transition: all 0.4s;
+	transform: translate(0, -0.1rem);
+	background: #f4f4f5;
+}
+
+/* .disabled-link {
+	color: #a1a1aa;
+	background: #fafafa;
+}
+
+.disabled-link > h2 {
+	opacity: 50%;
+} */
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 600;
+	font-size: 2.25rem;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+h3 {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	font-weight: 600;
+}
