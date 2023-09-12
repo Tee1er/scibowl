@@ -44,13 +44,7 @@ body {
 }
 
 /* Responsive stuff */
-/* @media (max-width: 60rem) {
-	.links {
-		grid-template-columns: repeat(2, 1fr);
-	}
-} */
-
-@media (max-width: 640px) {
+@media (max-width: 48rem) {
 	.container {
 		width: 100%;
 		padding: 5rem 3rem;
